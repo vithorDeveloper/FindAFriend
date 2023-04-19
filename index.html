@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/0fc7c92516.js" crossorigin="anonymous"></script>
+
+  <title>FindAFriend</title>
+</head>
+<body>
+
+  <header>
+      <div class="logo">
+        <img src="./assets/Group 18.svg" alt="logo do site">
+        <h3>FindAFriend</h3>
+      </div>
+    
+      <i id="menu" class="fa-solid fa-bars" onclick="mostrarMenu()"></i>
+
+      <div class="desktopMenu">
+        <span>Home</span>
+        <span>Sobre o app</span>
+        <span>Animais disponíveis</span>
+        <span>Sobre a FindAFriend</span>
+        <span>Contato</span>
+      </div>
+      
+  </header>
+
+  <main>
+      <div class="menuMobile hidden">
+        <div class="linha"></div>
+
+        <p>Home</p>
+        <p>Sobre o app</p>
+        <p>Animais disponíveis/p>
+        <p>Sobre o FindAFriend</p>
+        <p>contato</p>
+      </div>
+      
+      <section class="sectionOne">
+
+        <div class="menuMobile hidden">
+          <div class="linha"></div>
+
+          <p>Home</p>
+          <p>Sobre o app</p>
+          <p>Animais disponíveis/p>
+          <p>Sobre o FindAFriend</p>
+          <p>contato</p>
+        </div>
+
+          <div class="pets">
+            <img src="./assets/Ellipse 4.svg" alt="foto de pet">
+            <img src="./assets/Ellipse 5.svg" alt="foto de pet">
+            <img src="./assets/Ellipse 6.svg" alt="foto de pet">
+            <img src="./assets/Ellipse 7.svg" alt="foto de pet">
+            <p><strong>324 amigos</strong> na sua cidade</p>
+          
+            <h1>Leve <br> a  felicidade <br> para o seu lar</h1>
+          
+            <p class="hide">Encontre o animal de estimação ideal <br> para seu estilo de vida!</p>
+          </div>
+
+          <div class="imgDog">
+              <img src="./assets/image-removebg-preview 1 1.svg" alt="foto de cachorro">
+              
+              <button class="btn1">Acesse agora</button>
+
+              <div class="buttonDesktop hide">
+                <button>Acesse agora</button>
+              </div>
+
+              <img class="assets" src="./assets/Rectangle 29.png" alt="">
+              <img class="assets2" src="./assets/Rectangle 30.png" alt="">
+          </div>
+      </section>
+
+      <section class="sectionTwo">
+
+        <h1>Um app não, uma caixinha de amigos...</h1>
+
+          <article class="article1">
+            <img src="./assets/dog.svg" alt="icone de cachorro">
+            <p>
+              O <strong>FindAFriends</strong> é um produto desenvolvido para você encontrar 
+              o animal de estimação ideal ao seu estilo de vida!
+            </p>
+          </article>
+
+          <article class="article2">
+            <img src="./assets/cat.svg" alt="icone de cachorro">
+            <p>
+              <strong>ONGs</strong> cadastram os bichinhos disponíveis para adoção informando características 
+              como: porte, nível de energia, nível de independência, sociabilidade e gênero.
+            </p>
+          </article>
+
+          <article class="article3">
+            <img src="./assets/cego.svg" alt="icone de cachorro">
+            <p>
+              <strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. Depois é só entrar em contato
+              com a ONG para agendar uma visita e conhecer pessoalmente seu match perfeito!
+            </p>
+          </article>
+      </section>
+
+      <section class="sectionTwoDesktop hidden">
+
+        <div class="articleLeft">
+            <img src="./assets/Frame 42838.svg" alt="">
+        </div>
+
+        <div class="articleRight">
+
+          <h1>Um app não, uma caixinha de amigos...</h1>
+
+          <article class="article1">
+
+            <img src="./assets/dog.svg" alt="icone de cachorro">
+            <p>
+              O <strong>FindAFriends</strong> é um produto desenvolvido para você encontrar 
+              o animal de estimação ideal ao seu estilo de vida!
+            </p>
+          </article>
+
+          <article class="article2">
+            <img src="./assets/cat.svg" alt="icone de cachorro">
+            <p>
+              <strong>ONGs</strong> cadastram os bichinhos disponíveis para adoção informando características 
+              como: porte, nível de energia, nível de independência, sociabilidade e gênero.
+            </p>
+          </article>
+
+          <article class="article3">
+            <img src="./assets/cego.svg" alt="icone de cachorro">
+            <p>
+              <strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. Depois é só entrar em contato
+              com a ONG para agendar uma visita e conhecer pessoalmente seu match perfeito!
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="petsFriends">
+
+        <h1>Há muitos amigos esperando por você!</h1>
+  
+        <p>
+          O FiendAFriend conecta pessoas que estão procurando por um animal de 
+          estimação com animais que precisam de um lar amoroso. É fácil de usar 
+          e você pode navegar por uma variedade de animais para encontrar aquele 
+          que melhor se adapta ao seu estilo de vida e necessidades.
+        </p>
+    
+        <button>Acesse agora</button>
+    
+        <div class="imgsPets">
+          <div>
+            <div>
+              <i class="fa-solid fa-angle-right" onclick="nextImg()"></i>
+              <i class="fa-solid fa-angle-left" onclick="backImg()"></i>
+            </div>
+            <img class="slider on" src="./assets/Group 130.svg" alt="">
+            <img class="slider" src="./assets/Group 131.svg" alt="">
+            <img class="slider" src="./assets/Group 130 (1).svg" alt="">
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="about">
+
+        <h1>Sobre <br> a FindAFriend</h1>
+  
+        <p>
+          A FindAFriend acredita que todo bichinho merece uma vida confortável e segura. 
+          Por isso, cria soluções que ajudam ONGs e entidades protetoras a conectar pessoas 
+          adotantes e animais resgatados. 
+        </p>
+
+        <div class="imgsCollaborators">
+            <img src="./assets/Group 143.svg" alt="">
+            <img src="./assets/Group 144.svg" alt="">
+            <img src="./assets/Group 145.svg" alt="">
+            <img src="./assets/Group 146.svg" alt="">
+        </div>
+    
+        <div class="contact">
+          <div class="assets">
+            <img id="imgOne" src="./assets/Frame 5.svg" alt="">
+            <img id="imgTwo" src="./assets/Frame 4.svg" alt="">
+          </div>
+
+          <div class="contactLink">
+            <p>entre em contato conosco</p>
+            <a href="#" target="_blank">✉️ Clique aqui e envie um email</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="logoFooter">
+          <img src="./assets/Group 18.svg" alt="logo do site">
+          <h3>FindAFriend</h3>
+        </div>
+          <p>
+            2023 ® FindAFriend   |    All rights reserved
+          </p>
+        </div>
+      
+  </main>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

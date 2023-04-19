@@ -1,0 +1,760 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --global-color-primary: #F15156;  
+  --global-color-secondary: #E44449;
+  --global-color-article: #FDECED;
+  --global-color-text: #0D3B66;
+}
+
+body, button{
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+
+  background-color: var(--global-color-secondary);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2rem;
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+header i {
+  color: var(--global-color-text);
+  background-color: white;
+
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+}
+
+main{
+  background-color: white;
+}
+
+.linha{
+  border-top: 0.1rem solid #FDECED;
+  opacity: 0.5;
+
+  margin:  0 2rem;
+  padding-bottom: 2rem;
+}
+
+.menuMobile{
+  background: var(--global-color-secondary);
+  color: var(--global-color-article);
+  /* border-radius: 0px 0px 20px 20px; */
+  
+  padding: 0 2rem 2rem 2rem;
+}
+
+.menuMobile p{
+  line-height: 3rem;
+}
+
+.hidden{
+  display: none;
+}
+
+main .sectionOne{
+
+  height: auto;
+
+  background-color: var(--global-color-primary);
+  color: white;
+
+  /* margin-bottom: 7rem; */
+
+  padding-bottom: 5rem;
+}
+
+.sectionOne .pets{
+  padding-top: 5rem;
+}
+
+.sectionOne img:nth-child(1),
+.sectionOne p{
+  padding-left: 2rem;
+}
+
+.sectionOne img:nth-child(2){
+  position: relative;
+  right: 1.5rem;
+}
+
+.sectionOne img:nth-child(3){
+  position: relative;
+  right: 3rem;
+}
+
+.sectionOne img:nth-child(4){
+  position: relative;
+  right: 4.5rem;
+}
+
+.sectionOne h1{
+  padding: 3.5rem 0 5.5rem 2rem;
+
+  font-size: 4.4rem;
+  line-height: 4.8rem;
+}
+
+.sectionOne .imgDog{
+  width: 27rem;
+  height: 25rem;
+
+  background: linear-gradient(#F36A6F, #E44449);
+
+  border-radius: 1rem;
+
+  text-align: center;
+
+  margin: 0 auto;
+
+  grid-area: c;
+}
+
+.sectionOne .imgDog img{
+  position: relative;
+  bottom: 2.6rem;
+  
+  grid-area: imgDog
+}
+
+.sectionOne button{
+  width: 23rem;
+  height: 5.5rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  color: var(--global-color-text);
+  background-color: white;
+
+  font-weight: 700;
+
+  position: relative;
+  bottom: 10.6rem;
+}
+
+.sectionOne .hide, 
+.assets, .assets2,
+.desktopMenu,
+.sectionTwoDesktop{
+  display: none;
+}
+
+main .sectionTwo {
+  padding: 6rem 2rem 0 2rem;
+
+  background: white;
+}
+
+.sectionTwo h1{
+  color: var(--global-color-text);
+
+  font-size: 3rem;
+  line-height: 3.2rem;
+
+  padding-bottom: 2rem;
+}
+
+.sectionTwo article{
+  height: auto;
+
+  padding: 3rem;
+  margin-bottom: 1rem;
+
+  background: var(--global-color-article);
+  border: 1px solid rgba(241, 81, 86, 0.3);
+  border-radius: 20px;
+}
+
+.sectionTwo .article1{
+  grid-area: a;
+}
+
+.sectionTwo .article2{
+  grid-area: b;
+}
+
+.sectionTwo .article3{
+  grid-area: c;
+}
+
+.sectionTwo img{
+  padding-bottom: 3rem;
+}
+
+.sectionTwo p{
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+main .container{
+
+  justify-content: space-between;
+
+  background-color: #E44449;
+  color: white;
+
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+main .logoFooter{
+  display: flex;
+  align-items: center;
+  gap: 1rem;    
+}
+
+.petsFriends {
+  border-radius: 2rem;
+
+  background-color: var(--global-color-primary);
+  color: var(--global-color-article);
+
+  text-align: center;
+
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.petsFriends h1{
+font-size: 3rem;
+line-height: 3rem;
+
+padding: 6rem 3rem 4rem;
+
+color: #F4D35E;
+
+grid-area: a;
+}
+
+.petsFriends p{
+  line-height: 2rem;
+  padding-bottom: 2rem;
+
+  grid-area: c;
+}
+
+.petsFriends button{
+  width: 23rem;
+  height: 5.5rem;
+
+  border: none;
+  border-radius: 2rem;
+
+  color: var(--global-color-text);
+  background-color: white;
+
+  font-weight: 700;
+
+  margin-bottom: 3rem;
+
+  grid-area: b;
+}
+
+.petsFriends .fa-angle-right{
+  position: relative;
+  left: 15rem;
+  top: 9rem;
+  cursor: pointer;
+}
+
+.petsFriends .fa-angle-left{
+  position: relative;
+  right: 15rem;
+  top: 9rem;
+  cursor: pointer;
+}
+
+.petsFriends .imgsPets{
+  grid-area: d;
+}
+
+.petsFriends .imgsPets img{
+  width: 25rem;
+  height: 17rem;
+
+  margin-bottom: 4rem;
+}
+
+.petsFriends .slider{
+  display: none;
+  transition: opacity .2s;
+}
+
+.petsFriends .on{
+  display: inline;
+}
+
+.about{
+  margin: 2.5rem;
+
+  text-align: center;
+
+  color: var(--global-color-text);
+}
+
+.about h1{
+font-size: 3rem;
+line-height: 3rem;
+
+text-align: start;
+
+padding: 4rem 0 2rem;
+
+grid-area: a;
+}
+
+.about p{
+  line-height: 2rem;
+  padding-bottom: 6rem;
+  font-size: 2rem;
+
+  text-align: start;
+
+  grid-area: c;
+}
+
+.about .imgsCollaborators{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.about .imgsCollaborators img{
+  width: 27rem;
+  height: 28rem;
+
+  margin-bottom: 4rem;
+}
+
+.about .contact{
+  background: var(--global-color-text);
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+
+  border-radius: 1.5rem;
+}
+
+.about .assets{
+  display: flex;
+}
+
+.about .contact img{
+  width: 22rem;
+}
+
+.about .contact #imgOne{
+  position: relative;
+  bottom: 4rem;
+  left: 1rem;
+}
+
+.about .contact #imgTwo{
+  position: relative;
+  bottom: 1rem;
+  right: 11.5rem;
+}
+
+.about .contactLink{
+  padding-bottom: 4rem;
+}
+
+.about .contactLink p{
+  padding: 1rem 0 2rem 2rem;
+  font-size: 30px;
+  color: white;
+
+  line-height: 3rem;
+}
+
+.about .contactLink a{
+font-size: 1.5rem;
+color: #F4D35E;
+
+padding-left: 2rem;
+
+text-decoration: none;
+}
+
+@media screen and (min-width: 580px) {
+  main .sectionOne{
+    height: auto;
+    
+    display: flex;
+
+    padding: 5rem 5rem 0 0;
+  }
+
+  .sectionOne .imgDog{
+    margin-right: 5rem;
+  }
+
+  .sectionOne .pets{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  main .sectionOne{
+    height: 45rem;
+
+    padding-left: 11.3rem;
+  }
+
+  .sectionOne .imgDog{
+    width: 40rem;
+
+    margin-right: 2rem;
+  }
+
+  .sectionOne .hide{
+    display: block;
+  }
+
+  .sectionOne .buttonDesktop{
+    background: var(--global-color-secondary);
+
+    height: 10rem;
+
+    margin-top: -2rem;
+
+    border-radius: 1rem;
+  }
+
+  .sectionOne .buttonDesktop button{
+    position: relative;
+    top: 2rem;
+
+    width: 33rem;
+
+    border-radius: 1.6rem;
+  }
+
+  .sectionOne .imgDog .btn1{
+    display: none;
+    grid-area: button;
+  }
+
+  .sectionTwo{
+    display: none;
+  }
+
+  .sectionTwoDesktop{
+    display: flex;
+    justify-self: space-between;
+
+    align-items: center;
+
+    gap: 4rem;
+
+    padding: 2rem;
+  }
+
+  .sectionTwoDesktop .articleRight h1{
+    color: var(--global-color-text);
+
+    font-size: 3rem;
+    line-height: 3.2rem;
+
+    padding-bottom: 2rem;
+  }
+
+  .sectionTwoDesktop article{
+    height: auto;
+  
+    padding: 3rem;
+    margin-bottom: 1rem;
+  
+    background: var(--global-color-article);
+    border: 1px solid rgba(248, 151, 154, 0.2);
+    border-radius: 20px;
+  }
+
+  .sectionTwoDesktop .articleLeft{
+    border-radius: 2rem;
+
+    background: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+  }
+
+  main .sectionOne{
+    margin-bottom: 0;
+  }
+
+  .sectionTwo article,
+  .sectionTwo h1{
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  main .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .petsFriends {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    grid-template-areas: 
+    "a c"
+    "b d";
+
+    /* height: 95vh; */
+
+    padding: 5rem;
+  }
+
+  .petsFriends h1{
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .petsFriends button{
+    width: 23rem;
+    height: 7rem;
+  }
+
+  .petsFriends .imgsPets img{
+    width: 38rem;
+    height: 26rem; 
+  }
+
+  .petsFriends .fa-angle-right{
+    position: relative;
+    left: 23rem;
+    top: 15rem;
+    
+    font-size: 3rem;
+  }
+  
+  .petsFriends .fa-angle-left{
+    position: relative;
+    right: 23rem;
+    top: 15rem;
+
+    font-size: 3rem;
+  }
+
+  .about .imgsCollaborators{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    gap: 2rem;
+  }
+
+  .about .contactLink{
+    margin-left: 5rem;
+
+    position: relative;
+    bottom: 30rem;
+  }
+
+  .about .contactLink p{
+    font-size: 5rem;
+
+    width: 38rem;
+
+    line-height: 6rem;
+  }
+  
+  .about .contactLink a{
+    font-size: 3rem;
+  }
+
+  .contact{
+    height: 45rem;
+
+    margin: 4rem 0 8rem
+  }
+
+  .contact .assets #imgOne{
+    width: 76rem;
+    height: 21rem;
+    
+    position: relative;
+    top: 0;
+  }
+
+  .contact .assets #imgTwo{
+    width: 72rem;
+    height: 46rem;
+
+    position: relative;
+    top: 1rem;
+    right: 30rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .sectionOne .imgDog .assets{
+    height: 36rem;
+    display: block;
+
+    position: relative;
+    right: -41.5rem;
+    bottom: 36.2rem;
+  }
+
+  .sectionOne .imgDog .assets2{
+    height: 2.7rem;
+    width: 47rem;
+
+    display: block;
+
+    position: relative;
+    bottom: 35rem;
+  }
+
+  .sectionTwoDesktop .article1{
+    grid-area: a;
+  }
+  
+  .sectionTwoDesktop .article2{
+    grid-area: b;
+  }
+  
+  .sectionTwoDesktop .article3{
+    grid-area: c;
+  }
+
+  main .sectionTwoDesktop .articleRight{
+    display: grid;
+    
+    grid-template-areas:
+    "text text"
+    "a b"
+    "c c";
+
+    gap: 3rem;
+  }
+
+  header{
+    background-color: var(--global-color-primary);
+  }
+
+  header h3{
+    font-size: 2.5rem;
+  }
+
+  header #menu{
+    display: none;
+  }
+
+  header .desktopMenu{
+    display: block;
+    padding-right: 2rem;
+  }
+
+  header .desktopMenu span{
+    padding-right: 5rem;
+    font-size: 2rem;
+  }
+
+.petsFriends .fa-angle-right{
+    position: relative;
+    left: 30rem;
+    top: 15rem;
+
+    border: .1rem solid white;
+    border-radius: 15px;
+    padding: 2.5rem 3rem;
+  }
+  
+.petsFriends .fa-angle-left{
+    position: relative;
+    right: 30rem;
+    top: 15rem;
+  
+    border: .1rem solid white;
+    border-radius: 15px;
+    padding: 2.5rem 3rem;
+  }
+
+.petsFriends .fa-angle-left:active,
+.petsFriends .fa-angle-right:active{
+    background: #FFFFFF;
+    color:#0D3B66;
+    border-radius: 15px;
+  }
+
+.petsFriends{
+  gap: 16rem;
+}
+
+.petsFriends button{
+  width: 70%;
+  height: 8rem;
+  font-size: 2.5rem;
+}
+
+.sectionOne p, 
+.sectionTwo p,
+.sectionTwoDesktop p,
+.petsFriends p,
+.about p{
+  font-size: 2.5rem;
+}
+
+.about h1{
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.about p, 
+.about h1{
+  margin: 0 10rem 0;
+}
+
+.about p,
+.petsFriends p{
+  line-height: 4rem;
+}
+
+.contactLink p{
+  margin: 0
+}
+}
+
+@keyframes opacity {
+    0% { 
+      opacity:0
+    }
+
+    50% { 
+      opacity:0.5
+    }
+
+    100% { 
+      opacity:1
+    }
+}
