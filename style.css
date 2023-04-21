@@ -66,8 +66,12 @@ main{
   padding: 0 2rem 2rem 2rem;
 }
 
-.menuMobile p{
-  line-height: 3rem;
+.menuMobile a{
+  display: flex;
+  padding-bottom: 2rem;
+
+  text-decoration: none;
+  color: white;
 }
 
 .hidden{
@@ -675,9 +679,19 @@ text-decoration: none;
     padding-right: 2rem;
   }
 
-  header .desktopMenu span{
+  header .desktopMenu a{
     padding-right: 5rem;
     font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+    transition: .2s;
+  }
+
+  header .desktopMenu a:hover{
+    color: rgb(151, 151, 152);
+    transform: scale(1.5);
   }
 
 .petsFriends .fa-angle-right{
